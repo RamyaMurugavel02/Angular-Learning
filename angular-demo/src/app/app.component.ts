@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ViewComponent } from './view/view.component';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,15 @@ export class AppComponent {
 
   public data="TVM";
   message="";
+
+  @ViewChild (ViewComponent) child:any;
   onsubmit(data:any)
   {
     console.log(data);
   }
+    viewchild()
+    {
+      this.child.visible=!this.child.visible;
+    }
+ 
 }
