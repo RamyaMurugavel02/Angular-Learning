@@ -9,4 +9,9 @@ export class AppComponent {
   title = 'angular-demo';
 
   public data="TVM";
+  message="";
+  onsubmit(data:any)
+  {
+    console.log(data);
+  }
 }
