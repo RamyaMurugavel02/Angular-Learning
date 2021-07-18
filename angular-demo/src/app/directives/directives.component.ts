@@ -9,6 +9,7 @@ export class DirectivesComponent implements OnInit {
     display = true;
     ishide = false;
     nation = "india";
+    
     array = [
       {id: 1,name: "Ramya"},
       {id:2, name:"Keerthi"},

@@ -1,0 +1,78 @@
+<div class="card">
+    <div class="box">
+    <form [formGroup]="userform">
+        <div class="mt-5">
+            <div class="form-row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Name</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" formControlName="name" class="form-control" placeholder="Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Address</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" formControlName="address" class="form-control" placeholder="Address">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Contact Number</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" formControlName="contactno" class="form-control" placeholder="Contact No">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Gender</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" formControlName="gender" class="form-control" placeholder="Gender">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row mt-4">
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-primary" (click)="addItem()">Add</button>&nbsp;
+                            <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+    <div class="col-md-8 mt-4 mb-4">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>ADDRESS</th>
+                    <th>CONTACT NO</th>
+                    <th>GENDER</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listdata">
+                    <td><span>{{item.name}}</span></td>
+                    <td><Span>{{item.address}}</Span></td>
+                    <td><span>{{item.contactno}}</span></td>
+                    <td><span>{{item.gender}}</span></td>
+                    <td><button type="button" class="btn btn-primary" (click)="removeItem(item)">REMOVE</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

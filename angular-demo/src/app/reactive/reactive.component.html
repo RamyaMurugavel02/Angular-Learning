@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>LOGIN FORM</h2>
+    <form [formGroup]="login">
+        <label>UserName</label>
+       <input type="text" formControlName="username"><br>
+       <label>Password</label>
+       <input type="password" formControlName="password"><br><br>
+       <button type="submit" (click)="onclick()" [routerLink]="['/dashboard']">LOGIN</button>&nbsp;
+       <button type="submit" [routerLink]="['/register']">REGISTER</button>
+    </form><br>
+</div>

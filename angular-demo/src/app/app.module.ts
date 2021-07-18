@@ -10,6 +10,10 @@ import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { ReactiveComponent } from './reactive/reactive.component';
+import { RegisterComponent } from './register/register.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { Test1Component } from './test1/test1.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { PipesComponent } from './pipes/pipes.component';
     LoginComponent,
     BindingComponent,
     DirectivesComponent,
-    PipesComponent
+    PipesComponent,
+    ReactiveComponent,
+    RegisterComponent,
+    DashboardComponent,
+    Test1Component
   ],
   imports: [
     BrowserModule,
