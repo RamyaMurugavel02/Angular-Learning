@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DirectivesComponent } from './directives/directives.component';
     ViewComponent,
     LoginComponent,
     BindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
