@@ -1,0 +1,25 @@
+<h1>Structural Directives</h1>
+<h2>ngIf</h2>
+<div *ngIf="display; then thenblock else elseblock"></div>
+<ng-template #thenblock>
+  <h4>Hey, comes from then block</h4>
+</ng-template>
+<ng-template #elseblock>
+   <h4>Hey, comes from else block</h4>
+</ng-template>
+<hr>
+<h4 *ngIf="ishide">Comes from example 2</h4>
+<h2>ngFor</h2>
+<h5 *ngFor="let i of array">
+    {{i.id}} {{i.name}}
+</h5>
+<hr>
+<h2>ngSwitch</h2>
+<h5 [ngSwitch]="nation">
+    <div *ngSwitchCase="'india'"><p>I am from India</p></div>
+    <div *ngSwitchCase="'us'"><p>I am from US</p></div>
+    <div *ngSwitchCase="'russia'"><p>I am from Russia</p></div>
+    <div *ngSwitchDefault>Select Again</div>
+</h5>
+
+
