@@ -1,0 +1,15 @@
+<h1>One Way Binding</h1>
+<h2>Interpolation</h2>
+<h4>{{office}}</h4>
+<hr>
+<h2>Property Binding</h2>
+<input [disabled]="isshow" id="{{office}}" type="text" value="Hi all"><br><br>
+<input [disabled]="value" type="text" value="Example for Prop binding">
+<hr>
+<h2>Event Binding</h2>
+<button (click) = "onclick()">Click</button><br>
+<h4>{{event}}</h4>
+<hr>
+<h2>Two way Binding</h2>
+<input type="text" [(ngModel)]="twoway"><br> {{twoway}}
+<hr>

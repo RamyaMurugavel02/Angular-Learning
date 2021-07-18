@@ -6,19 +6,22 @@ import { TestComponent } from './test/test.component';
 import { ViewComponent } from './view/view.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { BindingComponent } from './binding/binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     ViewComponent,
-    LoginComponent
+    LoginComponent,
+    BindingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
